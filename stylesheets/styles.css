@@ -1,188 +1,3 @@
-/* body {
-  background-color: #04030e;
-  color: #ffffff;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color:#ffffff;
-  margin:0 0 20px;
-}
-
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height:1.1;
-}
-
-h1 {
-  font-size:28px;
-  font-weight: 500;
-}
-
-h2 {
-  color:#ffffff;
-  font-weight: 500;
-}
-
-h3, h4, h5, h6 {
-  color:#ffffff;
-  font-weight: 500;
-}
-
-a {
-  color:rgb(129, 206, 248);
-  text-decoration:none;
-}
-
-a:hover {
-  color:#069;
-}
-
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.3em;
-  display:block;
-}
-
-a:hover small {
-  color:#777;
-}
-
-.wrapper {
-  width:1000px;
-  margin:0 auto;
-}
-
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
-}
-
-dt {
-  color:#444;
-  font-weight:500;
-}
-
-th {
-  color:#444;
-}
-
-img {
-  max-width:100%;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding-top: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-section {
-  width: 90%;
-  max-width: 800px;
-  background-color: #1e1e2f;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-section h2 {
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-section p {
-  text-align: center;
-  color: #cccccc;
-}
-
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #33333300;
-  color: #fff;
-  margin-top: 40px;
-}
-
-/* Optional: Add this to your existing CSS if you want more spacing */
-/* .project {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #333;
-}
-
-.project:last-child {
-  border-bottom: none;
-} */
-
-
 /* General Styles */
 body {
   background-color: #04030e;
@@ -231,51 +46,6 @@ a:hover {
   color: #069;
 }
 
-/* Wrapper */
-.wrapper {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-/* Blockquotes */
-blockquote {
-  border-left: 1px solid #e5e5e5;
-  margin: 0;
-  padding: 0 0 0 20px;
-  font-style: italic;
-}
-
-/* Code and Preformatted Text */
-code, pre {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color: #333;
-}
-
-pre {
-  padding: 8px 15px;
-  background: #f8f8f8;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  text-align: left;
-  padding: 5px 10px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Images */
-img {
-  max-width: 100%;
-}
-
 /* Header Styles */
 header {
   background-color: #333;
@@ -311,7 +81,7 @@ header nav ul li a:hover {
 
 /* Main Content Styles */
 main {
-  padding-top: 120px;
+  padding-top: 120px; /* Space for the header */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,7 +92,7 @@ section {
   width: 90%;
   max-width: 800px;
   background-color: #1e1e2f;
-  padding: 20px;
+  padding: 20px; /* General padding */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -334,15 +104,4 @@ footer {
   background-color: #33333300;
   color: #fff;
   margin-top: 40px;
-}
-
-/* Optional: Add more spacing for projects */
-.project {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #333;
-}
-
-.project:last-child {
-  border-bottom: none;
 }

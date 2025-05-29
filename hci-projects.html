@@ -182,7 +182,7 @@
         <h4>Mind Map of Features</h4>
         <img src="images/mindmap_features.png" alt="Mind Map of App Features">
         <p>This mind map details the features proposed for the app, helping to visualize the various functionalities aimed at enhancing cultural connections.</p>
-        
+
         <h3>Empathize</h3>
         <p>A user scenario was identified for supporting expatriates feeling isolated from their culture. The choice was justified through needfinding and surveys conducted with potential users.</p>
         
@@ -226,5 +226,21 @@
     <footer>
       <p>&copy; 2025 Surya Narayan. All rights reserved.</p>
     </footer>
+    <script>
+      document.querySelectorAll('header nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+
+            const targetId = this.getAttribute('href'); // Get the target section ID
+            if (targetId === 'index.html') { return; }
+            e.preventDefault();
+
+            const targetElement = document.querySelector(targetId);
+
+            window.scrollTo({
+            top: targetElement.offsetTop - 120, // Adjust scroll position
+            });
+        });
+      });
+  </script>
   </body>
 </html>

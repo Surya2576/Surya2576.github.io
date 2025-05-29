@@ -60,6 +60,20 @@
     <footer>
       <p>&copy; 2025 Surya Narayan. All rights reserved.</p>
     </footer>
+    <script>
+      document.querySelectorAll('header nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault(); 
+
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+
+          window.scrollTo({
+            top: targetElement.offsetTop - 120, 
+          });
+        });
+      });
+  </script>
   </body>
 </html>
 
